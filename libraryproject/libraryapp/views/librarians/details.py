@@ -40,3 +40,4 @@ def librarian_details(request, librarian_id):
         }
 
         return render(request, template, context)
+        
