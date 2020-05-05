@@ -1,6 +1,6 @@
 import sqlite3
 from django.shortcuts import render
-from models import Library
+from libraryapp.models import Library
 from ..connection import Connection
 
 
