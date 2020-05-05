@@ -19,9 +19,12 @@ def get_librarian(librarian_id):
             l.user_id,
             u.first_name,
             u.last_name,
-            u.email
+            u.email,
+            li.title,
+            li.address
         FROM libraryapp_librarian l
         JOIN auth_user u on l.user_id = u.id
+        JOIN libraryapp_library li on l.location_id = li.id
         WHERE l.id = ?
         """, (librarian_id,))
 
