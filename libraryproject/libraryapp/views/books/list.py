@@ -8,7 +8,6 @@ from django.urls import reverse
 from django.shortcuts import redirect
 
 
-
 @login_required
 def book_list(request):
     if request.method == 'GET':
