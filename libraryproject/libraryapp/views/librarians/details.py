@@ -34,7 +34,6 @@ def get_librarian(librarian_id):
 def librarian_details(request, librarian_id):
     if request.method == 'GET':
         librarian = get_librarian(librarian_id)
-
         template = 'librarians/detail.html'
         context = {
             'librarian': librarian
