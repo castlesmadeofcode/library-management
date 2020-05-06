@@ -8,3 +8,4 @@ from .libraries.list import library_list
 from .libraries.details import library_details
 from .auth.logout import logout_user
 from .home import home
+from .books.form import book_form, book_edit_form
