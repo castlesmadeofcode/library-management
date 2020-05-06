@@ -6,7 +6,6 @@ from ..connection import Connection
 from django.urls import reverse
 from django.shortcuts import redirect
 
-
 def create_library(cursor, row):
     _row = sqlite3.Row(cursor, row)
 
