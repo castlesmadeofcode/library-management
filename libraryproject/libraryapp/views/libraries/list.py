@@ -51,7 +51,7 @@ def library_list(request):
                     b.year_published,
                     b.isbn
                 FROM libraryapp_library li
-                LEFT JOIN libraryapp_book b ON li.id = b.location_id
+                JOIN libraryapp_book b ON li.id = b.location_id
             """)
 
             libraries = db_cursor.fetchall()
