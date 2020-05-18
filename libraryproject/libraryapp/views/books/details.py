@@ -52,4 +52,5 @@ def book_details(request, book_id):
 
             book_to_update.save()
 
-            return redirect(reverse('libraryapp:books'))
+            # book redirects back to details page after edit
+            return redirect(reverse('libraryapp:book', args=[book_to_update.id]))
