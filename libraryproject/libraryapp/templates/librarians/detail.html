@@ -1,9 +1,8 @@
 {% extends 'shared/base.html' %}
 {% block content %}
 
-    <h1>{{ librarian.first_name }} {{ librarian.last_name }}</h1>
-    <h2> {{librarian.email}}</h2>
-    <div> works at <b>{{librarian.title}}</b> on <b>{{librarian.address}}</b> </div>
+    <h1>{{ librarian.user.first_name }} {{ librarian.user.last_name }}</h1>
+    <div> works at <b>{{librarian.location.title}}</b> on <b>{{librarian.location.address}}</b> </div>
 
 
 {% endblock %}
